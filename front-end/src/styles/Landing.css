@@ -1,0 +1,99 @@
+.landing-page{
+    z-index:-1;
+    text-align: center;
+    background-color:black;
+    height:calc(100vh - 80px);
+}
+
+.landing-info-container{
+    width:100%;
+    height:500px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+    
+
+
+.landing-info-container:after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100% !important;
+    height:100% !important;
+    background-image: url("https://t3.ftcdn.net/jpg/01/04/12/90/360_F_104129074_ptkjMVDwZ2826fVJqUvLYWQVhDfXEVRt.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-color:black;
+    opacity:0.6;
+    /* z-index:1; */
+
+}
+
+.landing-info{
+    color:white !important;
+    z-index:1;
+    width:100%;
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.get-started-btn{
+    width:200px;
+    padding:15px;
+    border-radius:10px;
+    background-color:#00A877;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition: transform .2s; /* Animation */
+
+}
+.get-started-btn:hover{
+    width:200px;
+    padding:15px;
+    border-radius:10px;
+    background-color:#00A877;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+
+.router-link{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.landing-info > h5{
+    font-size:25px;
+}
+.landing-info > h2{
+    font-size:40px;
+}
+
+@media (max-width:700px){
+    .landing-info > p{
+        width:90%;
+        font-size:25px;
+
+    }
+}
+
+@media (min-width:700px){
+    .landing-info > p{
+        width:600px;
+        font-size:25px;
+
+    }
+}
+
